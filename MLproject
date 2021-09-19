@@ -1,0 +1,13 @@
+name: mnist-cnn
+
+docker_env:
+  image: glovali/mnist-cnn
+
+entry_points:
+  main:
+    parameters:
+      batch_size: {type: int, default: 32}
+      epochs: {type: int, default: 25}
+    command: "python train.py \
+      --batch-size {batch_size} \
+      --epochs {epochs}"
