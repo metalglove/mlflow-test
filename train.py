@@ -27,7 +27,6 @@ def normalize_img(image, label):
     return tf.cast(image, tf.float32) / 255.0, label
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser()
     parser.add_argument("--batch-size")
     parser.add_argument("--epochs")

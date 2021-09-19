@@ -1,7 +1,7 @@
-name: mnist-cnn
+name: mnist-model
 
 docker_env:
-  image: glovali/mnist-cnn
+  image: mnist-model
 
 entry_points:
   main:
